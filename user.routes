@@ -1,0 +1,8 @@
+createUser
+updateUser (username, name, email, password)
+updateProfilePic
+updateCoverImage
+addCourse
+removeCourse
+getUserData
+login
