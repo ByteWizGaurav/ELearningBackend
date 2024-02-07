@@ -1,0 +1,5 @@
+addArticle
+removeArticle
+updateArticleContent
+updateArticleImage
+updateVisibility

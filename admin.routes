@@ -2,3 +2,6 @@ getAllUsers
 getAllCourses
 getAllQuestions
 getAllQuestionPapers
+
+updateProfile (username, email)
+updatePassword

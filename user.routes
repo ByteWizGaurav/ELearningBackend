@@ -6,3 +6,4 @@ addCourse
 removeCourse
 getUserData
 login
+updateRefreshToken
