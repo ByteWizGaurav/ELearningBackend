@@ -1,16 +1,19 @@
+Certainly! If you're storing the `accessToken` and `refreshToken` in cookies, it would impact the authentication process. Additionally, I've added a route to get a user by username. Below are the updated routes:
+
 1. **User Routes:**
    - `POST /api/users/register`: Register a new user.
    - `POST /api/users/login`: User login.
    - `GET /api/users/profile`: Get user profile.
    - `PUT /api/users/profile`: Update user profile.
    - `PUT /api/users/profile/image`: Update user profile image.
+   - `GET /api/users/:username`: Get user by username.
    - `GET /api/users/:id`: Get user by ID (admin access).
    - `PUT /api/users/:id`: Update user by ID (admin access).
    - `DELETE /api/users/:id`: Delete user by ID (admin access).
    - `GET /api/users/:id/courses`: Get courses enrolled by a specific user.
    - `GET /api/users/:id/articles`: Get articles created by a specific user.
    - `GET /api/users/:id/communities`: Get communities joined by a specific user.
-   - **Total Count: 11**
+   - **Total Count: 12**
 
 2. **Course Routes:**
    - `GET /api/courses`: Get all courses.
@@ -71,6 +74,8 @@
 
 9. **Roadmap Routes:**
    - `GET /api/roadmaps`: Get all roadmaps.
+
+
    - `GET /api/roadmaps/:roadmapId`: Get roadmap by ID.
    - `POST /api/roadmaps`: Create a new roadmap.
    - `PUT /api/roadmaps/:roadmapId`: Update roadmap by ID.
@@ -117,4 +122,4 @@
     - `DELETE /api/solutionpapers/:solutionPaperId`: Delete solution paper by ID.
     - **Total Count: 5**
 
-**Grand Total Count: 87 Routes**
+**Grand Total Count: 93 Routes**
