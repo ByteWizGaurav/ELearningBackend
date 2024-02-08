@@ -90,9 +90,7 @@
     - `GET /api/degrees/:degreeId`: Get degree by ID.
     - `POST /api/degrees`: Create a new degree.
     - `PUT /api/degrees/:degreeId`: Update degree by ID.
-    - `DELETE /api/degrees/:degreeId`: Delete degree by
-
- ID.
+    - `DELETE /api/degrees/:degreeId`: Delete degree by ID.
     - **Total Count: 5**
 
 12. **Subject Routes:**
