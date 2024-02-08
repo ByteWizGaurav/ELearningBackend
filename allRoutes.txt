@@ -1,0 +1,122 @@
+1. **User Routes:**
+   - `POST /api/users/register`: Register a new user.
+   - `POST /api/users/login`: User login.
+   - `GET /api/users/profile`: Get user profile.
+   - `PUT /api/users/profile`: Update user profile.
+   - `PUT /api/users/profile/image`: Update user profile image.
+   - `GET /api/users/:id`: Get user by ID (admin access).
+   - `PUT /api/users/:id`: Update user by ID (admin access).
+   - `DELETE /api/users/:id`: Delete user by ID (admin access).
+   - `GET /api/users/:id/courses`: Get courses enrolled by a specific user.
+   - `GET /api/users/:id/articles`: Get articles created by a specific user.
+   - `GET /api/users/:id/communities`: Get communities joined by a specific user.
+   - **Total Count: 11**
+
+2. **Course Routes:**
+   - `GET /api/courses`: Get all courses.
+   - `GET /api/courses/:id`: Get course by ID.
+   - `POST /api/courses`: Create a new course (admin access).
+   - `PUT /api/courses/:id`: Update course by ID (admin access).
+   - `DELETE /api/courses/:id`: Delete course by ID (admin access).
+   - **Total Count: 5**
+
+3. **Module Routes:**
+   - `GET /api/modules/:courseId`: Get all modules for a specific course.
+   - `GET /api/modules/:courseId/:moduleId`: Get module by ID for a specific course.
+   - `POST /api/modules/:courseId`: Create a new module for a specific course (admin access).
+   - `PUT /api/modules/:courseId/:moduleId`: Update module by ID for a specific course (admin access).
+   - `DELETE /api/modules/:courseId/:moduleId`: Delete module by ID for a specific course (admin access).
+   - **Total Count: 5**
+
+4. **Content Routes:**
+   - `GET /api/content/:moduleId`: Get all content for a specific module.
+   - `GET /api/content/:moduleId/:contentId`: Get content by ID for a specific module.
+   - `POST /api/content/:moduleId`: Create new content for a specific module (admin access).
+   - `PUT /api/content/:moduleId/:contentId`: Update content by ID for a specific module (admin access).
+   - `DELETE /api/content/:moduleId/:contentId`: Delete content by ID for a specific module (admin access).
+   - **Total Count: 5**
+
+5. **Question Routes:**
+   - `GET /api/questions/:courseId`: Get all practice questions for a specific course.
+   - `GET /api/questions/:courseId/:questionId`: Get practice question by ID for a specific course.
+   - `POST /api/questions/:courseId`: Create a new practice question for a specific course (admin access).
+   - `PUT /api/questions/:courseId/:questionId`: Update practice question by ID for a specific course (admin access).
+   - `DELETE /api/questions/:courseId/:questionId`: Delete practice question by ID for a specific course (admin access).
+   - **Total Count: 5**
+
+6. **Assignment Routes:**
+   - `GET /api/assignments/:moduleId`: Get all assignments for a specific module.
+   - `GET /api/assignments/:moduleId/:assignmentId`: Get assignment by ID for a specific module.
+   - `POST /api/assignments/:moduleId`: Create a new assignment for a specific module (admin access).
+   - `PUT /api/assignments/:moduleId/:assignmentId`: Update assignment by ID for a specific module (admin access).
+   - `DELETE /api/assignments/:moduleId/:assignmentId`: Delete assignment by ID for a specific module (admin access).
+   - **Total Count: 5**
+
+7. **Article Routes:**
+   - `GET /api/articles`: Get all articles.
+   - `GET /api/articles/:articleId`: Get article by ID.
+   - `POST /api/articles`: Create a new article.
+   - `PUT /api/articles/:articleId`: Update article by ID.
+   - `DELETE /api/articles/:articleId`: Delete article by ID.
+   - `PUT /api/articles/:articleId/image`: Update article image.
+   - **Total Count: 6**
+
+8. **Community Routes:**
+   - `GET /api/communities`: Get all communities.
+   - `GET /api/communities/:communityId`: Get community by ID.
+   - `POST /api/communities`: Create a new community.
+   - `PUT /api/communities/:communityId`: Update community by ID.
+   - `DELETE /api/communities/:communityId`: Delete community by ID.
+   - **Total Count: 5**
+
+9. **Roadmap Routes:**
+   - `GET /api/roadmaps`: Get all roadmaps.
+   - `GET /api/roadmaps/:roadmapId`: Get roadmap by ID.
+   - `POST /api/roadmaps`: Create a new roadmap.
+   - `PUT /api/roadmaps/:roadmapId`: Update roadmap by ID.
+   - `DELETE /api/roadmaps/:roadmapId`: Delete roadmap by ID.
+   - **Total Count: 5**
+
+10. **Chat Routes:**
+    - `GET /api/chats/:userId`: Get all chat sessions for a specific user.
+    - `GET /api/chats/:userId/:chatId`: Get chat session by ID for a specific user.
+    - `POST /api/chats/:userId`: Create a new chat session for a specific user.
+    - `PUT /api/chats/:userId/:chatId`: Update chat session by ID for a specific user.
+    - `DELETE /api/chats/:userId/:chatId`: Delete chat session by ID for a specific user.
+    - **Total Count: 5**
+
+11. **Degree Routes:**
+    - `GET /api/degrees`: Get all degrees.
+    - `GET /api/degrees/:degreeId`: Get degree by ID.
+    - `POST /api/degrees`: Create a new degree.
+    - `PUT /api/degrees/:degreeId`: Update degree by ID.
+    - `DELETE /api/degrees/:degreeId`: Delete degree by
+
+ ID.
+    - **Total Count: 5**
+
+12. **Subject Routes:**
+    - `GET /api/subjects`: Get all subjects.
+    - `GET /api/subjects/:subjectId`: Get subject by ID.
+    - `POST /api/subjects`: Create a new subject.
+    - `PUT /api/subjects/:subjectId`: Update subject by ID.
+    - `DELETE /api/subjects/:subjectId`: Delete subject by ID.
+    - **Total Count: 5**
+
+13. **QuestionPaper Routes:**
+    - `GET /api/questionpapers`: Get all question papers.
+    - `GET /api/questionpapers/:questionPaperId`: Get question paper by ID.
+    - `POST /api/questionpapers`: Create a new question paper.
+    - `PUT /api/questionpapers/:questionPaperId`: Update question paper by ID.
+    - `DELETE /api/questionpapers/:questionPaperId`: Delete question paper by ID.
+    - **Total Count: 5**
+
+14. **SolutionPaper Routes:**
+    - `GET /api/solutionpapers`: Get all solution papers.
+    - `GET /api/solutionpapers/:solutionPaperId`: Get solution paper by ID.
+    - `POST /api/solutionpapers`: Create a new solution paper.
+    - `PUT /api/solutionpapers/:solutionPaperId`: Update solution paper by ID.
+    - `DELETE /api/solutionpapers/:solutionPaperId`: Delete solution paper by ID.
+    - **Total Count: 5**
+
+**Grand Total Count: 87 Routes**
