@@ -1,5 +1,3 @@
-Certainly! If you're storing the `accessToken` and `refreshToken` in cookies, it would impact the authentication process. Additionally, I've added a route to get a user by username. Below are the updated routes:
-
 1. **User Routes:**
    - `POST /api/users/register`: Register a new user.
    - `POST /api/users/login`: User login.
