@@ -29,13 +29,12 @@
    - `DELETE /api/modules/:courseId/:moduleId`: Delete module by ID for a specific course (admin access).
    - **Total Count: 5**
 
-4. **Content Routes:**
-   - `GET /api/content/:moduleId`: Get all content for a specific module.
-   - `GET /api/content/:moduleId/:contentId`: Get content by ID for a specific module.
-   - `POST /api/content/:moduleId`: Create new content for a specific module (admin access).
-   - `PUT /api/content/:moduleId/:contentId`: Update content by ID for a specific module (admin access).
-   - `DELETE /api/content/:moduleId/:contentId`: Delete content by ID for a specific module (admin access).
-   - **Total Count: 5**
+4. **ChatDetails Routes:**
+   - `GET /api/chatDetails`: Get all content for a specific module.
+   - `GET /api/chatDetails/:id`: Get content by ID for a specific module.
+   - `POST /api/chatDetails`: Create new content for a specific module.
+   - `DELETE /api/chatDetails/:id`: Delete content by ID for a specific module (admin, any user from participants access).
+   - **Total Count: 4**
 
 5. **Question Routes:**
    - `GET /api/questions/:courseId`: Get all practice questions for a specific course.
@@ -72,8 +71,6 @@
 
 9. **Roadmap Routes:**
    - `GET /api/roadmaps`: Get all roadmaps.
-
-
    - `GET /api/roadmaps/:roadmapId`: Get roadmap by ID.
    - `POST /api/roadmaps`: Create a new roadmap.
    - `PUT /api/roadmaps/:roadmapId`: Update roadmap by ID.
@@ -120,4 +117,10 @@
     - `DELETE /api/solutionpapers/:solutionPaperId`: Delete solution paper by ID.
     - **Total Count: 5**
 
-**Grand Total Count: 93 Routes**
+15. **Follower Routes:**
+    - `GET /api/follower/isFollowing`: Get all solution papers.
+    - `POST /api/follower/followUser`: Create a new solution paper.
+    - `DELETE /api/follower/unfollowUser`: Delete solution paper by ID
+    - **Total Count: 3**
+
+**Grand Total Count: 95 Routes**
